@@ -1,12 +1,29 @@
+@font-face {
+    font-family: LuckiestGuy;
+    src: url("/fonts/LuckiestGuy-Regular.ttf") format("truetype");
+}
+
+
 body{
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*height: 100vh;*/
+    font-family: 'LuckiestGuy';
+}
+h1{
+    font-size: 5em;
+    position: relative;
+    animation: ;
 }
 img{
     width: 80%;
     position: fixed;
     bottom: 0;
+}
+
+
+
+@keyframes  {
+    
 }
