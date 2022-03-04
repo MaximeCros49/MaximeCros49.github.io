@@ -1,0 +1,239 @@
+@font-face {
+    font-family: LuckiestGuy;
+    src: url("/frontpage/fonts/LuckiestGuy-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Abeezee-Regular;
+  src: url("/frontpage/fonts/ABeeZee-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Abeezee-Italic;
+  src: url("/frontpage/fonts/ABeeZee-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Kalam-Bold;
+  src: url("/frontpage/fonts/Kalam-Bold.ttf") format("truetype");
+}
+
+
+
+
+/***********************    BACKGROUND    *************************/
+
+
+
+.background{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #4700b3;
+    overflow: hidden;
+}
+
+
+
+/**************************    MAIN    ****************************/
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+/******   HEADER CONTAINER     ******/
+
+
+
+
+
+.header-container{
+  /*background-color: lightblue;*/
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+  line-height: 2rem;
+  font-family: 'Abeezee-Regular';
+  font-size: 1.1rem;
+  margin: 1em;
+}
+
+.header-container h1 {
+  font-family: 'Kalam-Bold';
+  font-size: 4rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.travaux {
+  display: inline-block;
+  padding: 0.1em 0.3em;
+  margin-top: 1em;
+  color: black;
+  font-size: 1.2rem;
+  background-color: yellow;
+  border-radius: 10px;
+  font-family: 'Abeezee-Regular';
+}
+
+
+.superecole{
+  font-family: 'Abeezee-Italic';
+  font-size: 1.4em;
+  font-weight: bold;
+  animation: Oclock 4s linear infinite;
+}
+
+
+.strike{
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: lightskyblue;
+}
+
+
+
+
+
+/******    PROJETS CONTAINER     ******/
+
+
+
+
+
+.projets-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1rem;
+  overflow: scroll;
+}
+
+.projets-container::-webkit-scrollbar {
+  display: none;  /*Chrome, Safari and Opera */
+}
+.projets-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.projet-container__carte{
+  background:rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 1rem;
+  padding: 0.5rem;
+  box-shadow: 2px 5px 19px 0px rgba(0,0,0,0.25);
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(200px);
+}
+
+.projet-container__carte h3{
+  margin-top: 1em;
+  font-size: 1.8em;
+  color: lightblue;
+  text-align: center;
+  font-family: 'LuckiestGuy';
+}
+
+.projet-container__carte p{
+  text-align: center;
+  color: lightgray;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Abeezee-Regular';
+}
+
+.projet-container__carte a{
+  margin-bottom: 1em;
+  color: lightpink;
+  font-family: 'Abeezee-Regular';
+  font-weight: bold;
+}
+
+/******    FOOTER CONTAINER     ******/
+
+
+/**********************************************/
+/******    A FAIRE EN STICKY TOP LEFT   ******/
+/********************************************/
+
+
+/*
+.footer-container{
+  background-color: lightyellow;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container-cv{
+  margin-bottom: 3em;
+  color: white;
+}
+
+.footer-container-link{
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.footer-container-link img {
+  width: 65%;
+  filter: saturate(0);
+}
+
+.footer-container-link img:hover {
+  width: 65%;
+  filter: saturate(1);
+  transition: filter 0.3s ease-in;
+}
+*/
+
+
+
+
+
+
+
+
+/***********************    OCLOCKNAUT    *************************/
+
+
+
+.oclocknaut{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.oclocknaut > img {
+    animation:  max-fly, max-squeeze;
+    animation-duration: 3s, 1.5s;
+    animation-delay: 5s, 12s;
+    animation-iteration-count: 1, 1;
+}
+
+
+
