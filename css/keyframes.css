@@ -1,3 +1,7 @@
+/*************************************************/
+/******************** NUAGES ********************/
+/***********************************************/
+
 @keyframes translate-gros-nuage{
     0% {
         transform: translateX(-110%);
@@ -20,5 +24,35 @@
     }
     100% {
         transform: translateX(60%);
+    }
+}
+
+/********************************************************/
+/******************** NAME ENTRANCE ********************/
+/******************************************************/
+
+@keyframes title {
+    0% {
+        opacity: 0;
+        transform: translateY(-150%);
+    }
+    50%{
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes subtitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }

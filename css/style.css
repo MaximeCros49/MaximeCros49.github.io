@@ -55,7 +55,7 @@ body {
 /***************************/
 
 .container {
-    height: 60vh;
+    height: 70vh;
     width: 70vw;
     margin: auto;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -124,7 +124,7 @@ img.superpose{
 /**********************************/
 
 .left-section{
-    z-index: 1000;
+    z-index: 100;
     width: 50%;
     /* background-color: #656f866b; */
     display: flex;
@@ -135,11 +135,13 @@ h1{
     font-size: 5.2rem;
     font-family: 'KGHAPPY';
     margin-bottom: 0.5rem;
+    animation: title 1.5s ease 0s 1 normal forwards;
 }
 h2{
     font-size: 1.6rem;
     font-family: 'Urbanist-Bold';
     margin-left: 2rem;
+    animation: subtitle 2.5s ease 0s 1 normal forwards;
 }
 .left-section-description{
     /* background-color: green; */
@@ -205,14 +207,14 @@ h3{
 	content: '';
 	display: block;
 	width: 0;
-	height: 0.1rem;
+	height: 0.2rem;
     margin-top: 0.1rem;
 	background: rgb(197, 228, 254);
 	transition: .4s;
 }
 .navbar-link:hover::after{
 	width: 100%;
-	transition: width .4s;
+	transition: .4s;
 }
 article{
     height: 60%;
@@ -239,8 +241,11 @@ article{
 .link{
     height: 3%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 .link img{
     margin: 0 0.5rem;
+    filter: saturate(0);
 }
+
+
