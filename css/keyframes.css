@@ -1,31 +1,24 @@
-@keyframes text-floating {
-    0% { transform: translate(0,  0); }
-    50%  { transform: translate(0, -0.3rem); }
-    100%   { transform: translate(0, 0); }   
+@keyframes translate-gros-nuage{
+    0% {
+        transform: translateX(-110%);
+    }
+    100% {
+        transform: translateX(90%);
+    }
 }
-@keyframes h1-floating {
-    0% { transform: translate(0,  0); }
-    50%  { transform: translate(2rem, 0); }
-    100%   { transform: translate(0, 0); }   
+@keyframes translate-medium-nuage{
+    0% {
+        transform: translateX(-70%);
+    }
+    100% {
+        transform: translateX(70%);
+    }
 }
-@keyframes h2-floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(2rem, 0); }
-    100%   { transform: translate(0, 0); }   
+@keyframes translate-piti-nuage{
+    0% {
+        transform: translateX(-70%);
+    }
+    100% {
+        transform: translateX(60%);
+    }
 }
-@keyframes h3-floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(2rem, 0); }
-    100%   { transform: translate(0, 0); }   
-}
-
-/* @keyframes btn1-floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 1rem); }
-    100%   { transform: translate(0, 0); }   
-}
-@keyframes btn2-floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 1rem); }
-    100%   { transform: translate(0, 0); }   
-} */

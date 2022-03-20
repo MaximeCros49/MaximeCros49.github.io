@@ -3,200 +3,244 @@
     src: url("/fonts/Urbanist-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: Urbanist-Bold;
-    src: url("/fonts/Urbanist-Bold.ttf") format("truetype");
+    font-family: KGHAPPY;
+    src: url("/fonts/KGHAPPY.ttf") format("truetype");
 }
 @font-face {
-    font-family: Urbanist-Medium;
-    src: url("/fonts/Urbanist-Medium.ttf") format("truetype");
+    font-family: HEYCOMIC;
+    src: url("/fonts/Hey\ Comic.ttf") format("truetype");
 }
-@font-face {
-    font-family: Baloo2-Regular;
-    src: url("/fonts/Baloo2-Regular.ttf") format("truetype");
-}
+
+
 
 
 /****************************/
 /******** VARIABLES ********/
 /**************************/
 
-
 :root {
-    --section-background: rgba(255, 255, 255, 0.40);
-    --section-border: rgba(255, 255, 255, 0.25);
-    --home-text-color: #7d59fc;
-    --home-text-buttons-color: #fc59bd;
+    --section-background: rgba(255, 255, 255, 0.10);
+    --section-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    --home-text-color: #ffffff;
+    --home-text-buttons-color: #656f86;
     --home-text-buttons-background: rgba(255, 255, 255, 0.25);
-    --home-text-buttons-hover-background: #f8bce1;
+    --home-text-buttons-hover-background: #2d3d638e;
 }
+
+
 
 
 /***********************/
 /******** BODY ********/
 /*********************/
 
-
 body {
     min-height: 100vh;
-    background-image: linear-gradient( 109.6deg,  rgba(218,185,252,1) 11.2%, rgba(125,89,252,1) 91.1% );
+    color: #fff;
+
+    
+    background-image: linear-gradient(to bottom, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    /* background-image: linear-gradient( 112.1deg,  rgb(89, 147, 185) 11.4%, rgb(91, 111, 180) 70.2% ); */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+
+
+/*****************************/
+/******** BACKGROUND ********/
+/***************************/
+
+.container {
+    height: 60vh;
+    width: 70vw;
+    margin: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 40px;
+    position: relative;
+    overflow:hidden;
+}
+img.superpose{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#premier-plan {
+    z-index: 4;
+}
+#deuxieme-plan {
+    z-index: 3;
+}
+#arriere-plan1 {
+    z-index: -1;
+}
+#gros-nuage {
+    animation-duration: 65s;
+    animation-timing-function: linear;
+    animation-name: translate-gros-nuage;
+    animation-iteration-count: infinite;
+}
+#moyen-nuage {
+    animation-duration: 42s;
+    animation-timing-function: ease-in;
+    animation-timing-function: linear;
+    animation-name: translate-medium-nuage;
+    animation-iteration-count: infinite;
+}
+#piti-nuage {
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-name: translate-piti-nuage;
+    animation-iteration-count: infinite;
+}
+
+
+
+
 
 
 /***********************/
 /******** MAIN ********/
 /*********************/
 
-
-#main {
-    max-width: 80vw;
-    margin: auto;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-
-/****************************/
-/******** HOME-TEXT ********/
-/**************************/
-
-
-.home-section {
-    background-color: var(--section-background);
-    border: 2px solid var(--section-border);
-    backdrop-filter: blur(200px);
-    min-height: 90vh;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.home-text{
-    width: 50%;
+#main{
+    width: 100%;
     height: 100%;
-    font-style: italic;
-    margin-bottom: 16rem;
-    margin-left: 4rem;
-    text-align: left;
-    line-height: 2.2rem;
-    color: var(--home-text-color);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
 }
 
-.text {
-    margin-bottom: 2rem;
-    font-size: 1.7rem;
-    font-family: Urbanist-Regular;
-    font-style: italic;
-    animation-name: text-floating;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out
-}
 
-.home-text h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-family: Urbanist-bold;
-    font-style: italic;
-    animation-name: h1-floating;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out
-}
 
-.home-text h2 {
-    margin-bottom: 0.7rem;
-    margin-left: 2.6rem;
-    font-size: 1.8rem;
-    font-family: Urbanist-bold;
-    font-style: italic;
-    animation-name: h2-floating;
-    animation-delay: 2s;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out
-}
-
-.home-text h3 {
-    margin-left: 6rem;
-    font-size: 1.3rem;
-    font-family: Urbanist-Medium;
-    animation-name: h3-floating;
-    animation-delay: 6s;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out
-}
 
 
 /************************************/
-/******** HOME-TEXT BUTTONS ********/
+/******** MAIN LEFT-SECTION ********/
 /**********************************/
 
-
-.buttons {
+.left-section{
+    z-index: 1000;
+    width: 50%;
+    /* background-color: #656f866b; */
     display: flex;
-    margin-top: 2rem;
-    margin-left: 6rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{
+    font-size: 5.2rem;
+    font-family: 'KGHAPPY';
+    margin-bottom: 0.5rem;
+}
+h2{
+    font-size: 1.6rem;
+    font-family: 'Urbanist-Bold';
+    margin-left: 2rem;
+}
+.left-section-description{
+    /* background-color: green; */
+    padding-left: 2rem;
+    height: 7vh;
+    display: flex;
+    font-family: 'Urbanist-Light';
+}
+.left-section-description-left-container{
+    width: 40%;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+h3{
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-family: 'Urbanist-Regular';
+    padding-bottom: 0.5rem;
+}
+.left-section-description-right-container{
+    margin: 0 2rem;
+    border-left: 2px solid #fff;
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
 }
 
-.btn1 {
-    padding: 0.3rem 1.5rem;
-    margin-left: 2rem;
-    font-family: Baloo2-Regular;
-    color: var(--home-text-buttons-color);
-    background-color: var(--home-text-buttons-background);
-    border: 1px solid #fff;
-    border-radius: 30px;
-    font-size: 1.4rem;
-    /* transition: 0.4s;
-    animation-name: btn1-floating;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out */
-}
-.btn2 {
-    padding: 0.3rem 1.5rem;
-    margin-left: 2rem;
-    font-family: Baloo2-Regular;
-    color: var(--home-text-buttons-color);
-    background-color: var(--home-text-buttons-background);
-    border: 1px solid #fff;
-    border-radius: 30px;
-    font-size: 1.4rem;
-    /* transition: 0.4s;
-    animation-name: btn2-floating;
-    animation-delay: 0.5s;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out */
-}
 
 
-.btn1:hover {
-    background-color: var(--home-text-buttons-hover-background);
-    color: #fff;
-}
 
-.btn2:hover {
-    background-color: var(--home-text-buttons-hover-background);
-    color: #fff;
-}
+/*************************************/
+/******** MAIN RIGHT-SECTION ********/
+/***********************************/
 
-
-/***************************/
-/******** HOME-IMG ********/
-/*************************/
-
-
-.home-img {
-    /* background-color: lightgreen; */
+.right-section{
+    z-index: 1000;
     width: 50%;
+    /* background-color: #22a8866b; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem; */
+    padding: 1rem 4rem;
+}
+.navbar-link-text{
+    font-size: 1.1rem;
+    font-family: 'HEYCOMIC';
+}
+.navbar-link::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0.1rem;
+    margin-top: 0.1rem;
+	background: rgb(197, 228, 254);
+	transition: .4s;
+}
+.navbar-link:hover::after{
+	width: 100%;
+	transition: width .4s;
+}
+article{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
 }
-
-.home-img img {
-    width: 50%;
+.card{
+    height: 85%;
+    width: 30%;
+    border-radius: 15px;
+    /* border: 2px solid var(--section-border); */
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.25); 
+    box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.25);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: saturate(1.3);
+}
+.link{
+    height: 3%;
+    display: flex;
+    justify-content: center;
+}
+.link img{
+    margin: 0 0.5rem;
 }
