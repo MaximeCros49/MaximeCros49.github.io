@@ -34,10 +34,10 @@
 @keyframes title {
     0% {
         opacity: 0;
-        transform: translateY(-150%);
+        transform: translateY(-400%);
     }
     50%{
-        transform: translateY(-150%);
+        transform: translateY(-400%);
     }
     100% {
         transform: translateY(0);
@@ -47,10 +47,10 @@
 @keyframes subtitle {
     0% {
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
     50%{
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
     100% {
         transform: translateX(0);
