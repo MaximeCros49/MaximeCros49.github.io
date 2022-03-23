@@ -35,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 /*******************************************************************************/
@@ -212,11 +213,15 @@ article{
     #arriere-plan, #deuxieme-plan, #premier-plan, #gros-nuage, #moyen-nuage, #piti-nuage{
         display: none;
     }
+    .container {
+        height: 90vh;
+        width: 80vw;
+    }
     .header{
         flex-direction: column;
     }
     .name-container-firstname{
-        font-size: 4rem;
+        font-size: 5rem;
     }
     .name-container-lastname{
         font-size: 1rem;
@@ -272,6 +277,10 @@ article{
     #arriere-plan, #deuxieme-plan, #premier-plan, #gros-nuage, #moyen-nuage, #piti-nuage{
         display: none;
     }
+    .container {
+        height: 90vh;
+        width: 80vw;
+    }
     .header{
         flex-direction: column;
     }
@@ -294,7 +303,7 @@ article{
         border: 1px solid var(--navbar-mobile-border);
         border-radius: 10px;
         padding: 0.3rem 0.4rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .footer{
         flex-direction: column;
